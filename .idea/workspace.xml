@@ -5,6 +5,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6a96f294-669b-4fce-95fa-8429320b4bd1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,26 +154,30 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="693" y="223" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1594367386494" />
-    <state width="1860" height="260" key="GridCell.Tab.0.bottom" timestamp="1594374941401">
+    <state width="1860" height="206" key="GridCell.Tab.0.bottom" timestamp="1594457585347">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1594374941401" />
-    <state width="1860" height="260" key="GridCell.Tab.0.center" timestamp="1594374941400">
+    <state width="1860" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1594457585347" />
+    <state width="1860" height="206" key="GridCell.Tab.0.center" timestamp="1594457585346">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="260" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1594374941400" />
-    <state width="1860" height="260" key="GridCell.Tab.0.left" timestamp="1594374941400">
+    <state width="1860" height="206" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1594457585346" />
+    <state width="1860" height="206" key="GridCell.Tab.0.left" timestamp="1594457585345">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="260" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1594374941400" />
-    <state width="1860" height="260" key="GridCell.Tab.0.right" timestamp="1594374941400">
+    <state width="1860" height="206" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1594457585345" />
+    <state width="1860" height="206" key="GridCell.Tab.0.right" timestamp="1594457585347">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="260" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1594374941400" />
+    <state width="1860" height="206" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1594457585347" />
     <state x="456" y="193" key="Vcs.Push.Dialog.v2" timestamp="1594367238250">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="456" y="193" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1594367238250" />
+    <state x="692" y="288" key="chooseDestDirectoryDialog" timestamp="1594455534521">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="692" y="288" key="chooseDestDirectoryDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594455534521" />
     <state x="550" y="311" key="com.intellij.ide.util.TipDialog" timestamp="1594445602661">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -179,9 +186,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="631" y="221" key="extract.method.dialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594373953699" />
-    <state x="441" y="123" width="1037" height="798" key="find.popup" timestamp="1594448123541">
+    <state x="441" y="123" width="1037" height="798" key="find.popup" timestamp="1594460245005">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="441" y="123" width="1037" height="798" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1594448123541" />
+    <state x="441" y="123" width="1037" height="798" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1594460245005" />
   </component>
 </project>

@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.heyletscode.ihavetofly",
+  "applicationId": "com.heyletscode.FlyingDestroyer",
   "variantName": "debug",
   "elements": [
     {

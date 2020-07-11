@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.heyletscode.ihavetofly",
+  "applicationId": "com.heyletscode.FlyingDestroyer",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "resources-debug.ap_",
       "properties": {
-        "packageId": "com.heyletscode.ihavetofly",
+        "packageId": "com.heyletscode.FlyingDestroyer",
         "split": "",
         "minSdkVersion": "15"
       }

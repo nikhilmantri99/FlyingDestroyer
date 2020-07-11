@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.heyletscode.ihavetofly"
+3    package="com.heyletscode.FlyingDestroyer"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -11,50 +11,47 @@
 9-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:5:5-25:19
+11-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:5:5-24:19
 12        android:allowBackup="true"
 12-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.0.1] /home/nikhil/.gradle/caches/transforms-2/files-2.1/21dadf335ac8035a991bc5e1b16c722a/core-1.0.1/AndroidManifest.xml:22:18-86
 14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:7:9-43
+15        android:icon="@drawable/fly1"
+15-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:7:9-38
 16        android:label="@string/app_name"
 16-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity
-21-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:12:9-14:58
-22            android:name="com.heyletscode.ihavetofly.GameActivity"
-22-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:12:19-47
-23            android:screenOrientation="landscape"
-23-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:13:13-50
-24            android:theme="@style/AppTheme.noActionBar" />
-24-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:14:13-56
-25        <activity
-25-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:15:9-24:20
-26            android:name="com.heyletscode.ihavetofly.MainActivity"
-26-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:16:13-41
-27            android:screenOrientation="landscape"
-27-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:17:13-50
-28            android:theme="@style/AppTheme.noActionBar" >
-28-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:18:13-56
-29            <intent-filter>
-29-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:19:13-23:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:20:17-69
-30-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:20:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:22:17-77
-32-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:22:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+17        android:supportsRtl="true"
+17-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:9:9-35
+18        android:theme="@style/AppTheme" >
+18-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:10:9-40
+19        <activity
+19-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:11:9-13:58
+20            android:name="com.heyletscode.FlyingDestroyer.GameActivity"
+20-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:11:19-47
+21            android:screenOrientation="landscape"
+21-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:12:13-50
+22            android:theme="@style/AppTheme.noActionBar" />
+22-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:13:13-56
+23        <activity
+23-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:14:9-23:20
+24            android:name="com.heyletscode.FlyingDestroyer.MainActivity"
+24-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:15:13-41
+25            android:screenOrientation="landscape"
+25-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:16:13-50
+26            android:theme="@style/AppTheme.noActionBar" >
+26-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:17:13-56
+27            <intent-filter>
+27-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:19:17-69
+28-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:21:17-77
+30-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

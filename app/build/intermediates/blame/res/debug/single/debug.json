@@ -4,6 +4,10 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_grey_bird_3.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/grey_bird_3.png"
+    },
+    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_country_platform_back.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/country_platform_back.png"
     },
@@ -144,8 +148,16 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/dino_run_1.png"
     },
     {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_country_platform_preview.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/country_platform_preview.png"
+    },
+    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_grey_bird_1.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/grey_bird_1.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_night_snow.jpg.flat",
@@ -162,6 +174,10 @@
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable-v24_shoot1.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable-v24/shoot1.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_grey_bird_4.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/grey_bird_4.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable-v24_fly2.png.flat",
@@ -182,6 +198,10 @@
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable-v24_shoot5.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable-v24/shoot5.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable_grey_bird_2.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/src/main/res/drawable/grey_bird_2.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_volume_off_black_24dp.png.flat",

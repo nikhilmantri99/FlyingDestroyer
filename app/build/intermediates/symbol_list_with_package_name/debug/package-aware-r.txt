@@ -1,4 +1,4 @@
-com.heyletscode.ihavetofly
+com.heyletscode.FlyingDestroyer
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -636,6 +636,7 @@ drawable bird4
 drawable bullet
 drawable country_platform_back
 drawable country_platform_forest
+drawable country_platform_preview
 drawable country_platform_tiles_example
 drawable dead
 drawable dino_run_1
@@ -648,6 +649,10 @@ drawable dino_run_7
 drawable dino_run_8
 drawable fly1
 drawable fly2
+drawable grey_bird_1
+drawable grey_bird_2
+drawable grey_bird_3
+drawable grey_bird_4
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_volume_off_black_24dp
