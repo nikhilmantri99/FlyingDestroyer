@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/IHaveToFly/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
                     "source": "/home/nikhil/.gradle/caches/transforms-2/files-2.1/ac578dd963fa0e8b00d9521c2822ad2e/appcompat-1.0.2/res/values-v26/values-v26.xml",

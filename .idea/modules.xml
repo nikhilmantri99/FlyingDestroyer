@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/IHaveToFly.iml" filepath="$PROJECT_DIR$/.idea/IHaveToFly.iml" group="IHaveToFly" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="IHaveToFly/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlyingDestroyer.iml" filepath="$PROJECT_DIR$/.idea/modules/FlyingDestroyer.iml" group="FlyingDestroyer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="FlyingDestroyer/app" />
     </modules>
   </component>
 </project>

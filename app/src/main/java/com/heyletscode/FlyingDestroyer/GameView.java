@@ -63,8 +63,8 @@ public class GameView extends SurfaceView implements Runnable {
 
         this.screenX = screenX;
         this.screenY = screenY;
-        screenRatioX = 1920f / screenX;
-        screenRatioY = 1080f / screenY;
+        screenRatioX = 1440f / screenX;
+        screenRatioY = 720f / screenY;
         background_back=new Background(screenX, screenY, getResources(),R.drawable.country_platform_back);
         background_mid1=new Background(screenX, screenY, getResources(),R.drawable.country_platform_forest);
         background_mid2=new Background(screenX, screenY, getResources(),R.drawable.country_platform_forest);
@@ -81,25 +81,29 @@ public class GameView extends SurfaceView implements Runnable {
         paint.setTextSize(128);
         paint.setColor(Color.WHITE);
 
-        birds = new Bird[4];
-        dinos= new Dino[2];
-        greybirds=new GreyBird[3];
+        int num_birds=3;
+        int num_dinos=2;
+        int num_greybirds=3;
 
-        for (int i = 0;i < 4;i++) {
+        birds = new Bird[num_birds];
+        dinos= new Dino[num_dinos];
+        greybirds=new GreyBird[num_greybirds];
+
+        for (int i = 0;i < num_birds;i++) {
 
             Bird bird = new Bird(getResources());
             birds[i] = bird;
 
         }
 
-        for (int i = 0;i < 2;i++) {
+        for (int i = 0;i < num_dinos;i++) {
 
             Dino dino = new Dino(getResources());
             dinos[i] = dino;
 
         }
 
-        for (int i = 0;i < 3;i++) {
+        for (int i = 0;i < num_greybirds;i++) {
 
             GreyBird greybird = new GreyBird(getResources());
             greybirds[i] = greybird;
@@ -117,7 +121,6 @@ public class GameView extends SurfaceView implements Runnable {
             update ();
             draw ();
             sleep ();
-
         }
 
     }
@@ -374,7 +377,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     private void sleep () {
         try {
-            Thread.sleep(17);
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
