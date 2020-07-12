@@ -405,19 +405,44 @@ public class GameView extends SurfaceView implements Runnable {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                if (event.getX() < screenX / 2) {
-                    flight.isGoingUp = true;
-                }
-                break;
-            case MotionEvent.ACTION_UP:
-                flight.isGoingUp = false;
-                if (event.getX() > screenX / 2)
-                    flight.toShoot++;
-                break;
+//        switch (event.getAction()) {
+//            case MotionEvent.ACTION_DOWN:
+//                if (event.getX() < screenX / 2) {
+//                    flight.isGoingUp = true;
+//                }
+//                break;
+//            case MotionEvent.ACTION_UP:
+//                flight.isGoingUp = false;
+//                if (event.getX() > screenX / 2)
+//                    flight.toShoot++;
+//                break;
+//        }
+        int i,j,k;
+        int lefthandid=-1;
+        if(event.getActionMasked()==MotionEvent.ACTION_DOWN){
+            if(event.getX(event.getActionIndex())<screenX/2){
+                flight.isGoingUp=true;
+            }
         }
-
+        else if(event.getActionMasked()==MotionEvent.ACTION_UP){
+            flight.isGoingUp=false;
+            if(event.getX(event.getActionIndex())>screenX/2){
+                flight.toShoot++;
+            }
+        }
+        else if(event.getActionMasked()==MotionEvent.ACTION_POINTER_DOWN){
+            if(event.getX(event.getActionIndex())<screenX/2){
+                flight.isGoingUp=true;
+            }
+        }
+        else if(event.getActionMasked()==MotionEvent.ACTION_POINTER_UP){
+            if(event.getX(event.getActionIndex())<screenX/2){
+                flight.isGoingUp=false;
+            }
+            if(event.getX(event.getActionIndex())>screenX/2){
+                flight.toShoot++;
+            }
+        }
         return true;
     }
 
