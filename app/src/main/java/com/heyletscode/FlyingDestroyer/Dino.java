@@ -10,7 +10,7 @@ import static com.heyletscode.FlyingDestroyer.GameView.screenRatioY;
 
 public class Dino {
 
-    public int speed = 20;
+    public int speed = 30;
     public boolean wasShot = true;
     int x = 0, y, width, height, dinocounter = 1;
     Bitmap dino1, dino2, dino3, dino4,dino5,dino6,dino7,dino8;
