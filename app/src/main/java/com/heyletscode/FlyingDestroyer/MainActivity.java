@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         final ImageView volumeCtrl = findViewById(R.id.volumeCtrl);
 
         if (isMute)
-            volumeCtrl.setImageResource(R.drawable.ic_volume_off_black_24dp);
+            volumeCtrl.setImageResource(R.drawable.soundoff);
         else
-            volumeCtrl.setImageResource(R.drawable.ic_volume_up_black_24dp);
+            volumeCtrl.setImageResource(R.drawable.soundon);
 
         volumeCtrl.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
                 isMute = !isMute;
                 if (isMute)
-                    volumeCtrl.setImageResource(R.drawable.ic_volume_off_black_24dp);
+                    volumeCtrl.setImageResource(R.drawable.soundoff);
                 else
-                    volumeCtrl.setImageResource(R.drawable.ic_volume_up_black_24dp);
+                    volumeCtrl.setImageResource(R.drawable.soundon);
 
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putBoolean("isMute", isMute);
