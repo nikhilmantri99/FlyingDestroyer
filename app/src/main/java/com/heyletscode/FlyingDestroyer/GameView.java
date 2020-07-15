@@ -21,6 +21,7 @@ import java.util.Random;
 public class GameView extends SurfaceView implements Runnable {
 
     private Thread thread;
+    public int update_count=0,num_birds,num_zombies,num_greybirds,num_dinos,num_rockets;
     private boolean isPlaying, isGameOver = false;
     private int screenX, screenY, score = 0;
     public static float screenRatioX, screenRatioY;
@@ -29,6 +30,7 @@ public class GameView extends SurfaceView implements Runnable {
     private Dino[] dinos;
     private GreyBird[] greybirds;
     private Zombie[] zombies;
+    private Rocket[] rockets;
     private SharedPreferences prefs;
     private Random random;
     private SoundPool soundPool;
@@ -82,16 +84,17 @@ public class GameView extends SurfaceView implements Runnable {
         paint.setTextSize(128);
         paint.setColor(Color.WHITE);
 
-        int num_birds=4;
-        int num_dinos=1;
-        int num_zombies=1;
-        int num_greybirds=3;
+         num_birds=4;
+         num_dinos=1;
+         num_zombies=1;
+         num_greybirds=3;
+         num_rockets=num_zombies;
 
         birds = new Bird[num_birds];
         dinos= new Dino[num_dinos];
         greybirds=new GreyBird[num_greybirds];
         zombies=new Zombie[num_zombies];
-
+        rockets= new Rocket[num_rockets];
         for (int i = 0;i < num_birds;i++) {
 
             Bird bird = new Bird(getResources());
@@ -119,6 +122,13 @@ public class GameView extends SurfaceView implements Runnable {
             greybirds[i] = greybird;
         }
 
+        for (int i = 0;i < num_rockets;i++) {
+
+            Rocket rocket = new Rocket(getResources());
+            rocket.x=-500;
+            rockets[i] = rocket;
+        }
+
         random = new Random();
 
     }
@@ -136,6 +146,8 @@ public class GameView extends SurfaceView implements Runnable {
     }
 
     private void update () {
+//          update_count++;
+          int i,j,k;
 //        background_mid1.x -= 5 * screenRatioX;
 //        background_mid2.x -= 5 * screenRatioX;
 
@@ -149,7 +161,6 @@ public class GameView extends SurfaceView implements Runnable {
 //        if (background_mid2.x + background_mid2.background.getWidth() < 0) {
 //            background_mid2.x = screenX;
 //        }
-
         if (background_front1.x + background_front1.background.getWidth() < 0) {
             background_front1.x = screenX;
         }
@@ -263,7 +274,7 @@ public class GameView extends SurfaceView implements Runnable {
                     bird.speed = (int) (20 * screenRatioX);
 
                 bird.x = screenX;
-                bird.y = random.nextInt(screenY - bird.height);
+                bird.y = random.nextInt(screenY - 4*bird.height);
 
                 bird.wasShot = false;
             }
@@ -325,7 +336,7 @@ public class GameView extends SurfaceView implements Runnable {
                     greybird.speed = (int) (20 * screenRatioX);
 
                 greybird.x = screenX;
-                greybird.y = random.nextInt(screenY - greybird.height);
+                greybird.y = random.nextInt(screenY - 4*greybird.height);
 
                 greybird.wasShot = false;
             }
@@ -338,11 +349,12 @@ public class GameView extends SurfaceView implements Runnable {
 
         }
 
-        for (Zombie zombie : zombies) {
+        for (i=0;i<num_zombies;i++) {
 
-            zombie.x -= zombie.speed;
+            zombies[i].x -= zombies[i].speed;
+            rockets[i].x -= rockets[i].speed;
 
-            if (zombie.x + zombie.width < 0) {
+            if (zombies[i].x + zombies[i].width < 0) {
 
 //                if (!zombie.wasShot) {
 //                    isGameOver = true;
@@ -350,24 +362,37 @@ public class GameView extends SurfaceView implements Runnable {
 //                }
 
                 int bound = (int) (30 * screenRatioX);
-                zombie.speed = random.nextInt(bound);
+                zombies[i].speed = random.nextInt(bound);
 
-                if (zombie.speed < 10 * screenRatioX)
-                    zombie.speed = (int) (10 * screenRatioX);
+                if (zombies[i].speed < 10 * screenRatioX)
+                    zombies[i].speed = (int) (10 * screenRatioX);
 
-                zombie.x = screenX;
-                zombie.y = screenY-zombie.height-150;
+                zombies[i].x = screenX;
+                zombies[i].y = screenY-zombies[i].height-150;
 
-                zombie.wasShot = false;
+                zombies[i].wasShot = false;
             }
 
-            if (Rect.intersects(zombie.getCollisionShape(), flight.getCollisionShape())) {
+            if(rockets[i].x + rockets[i].width<0 && zombies[i].wasShot==false){
+                int bound=(int)(zombies[i].speed+20*screenRatioX);
+                rockets[i].speed=bound;
+                rockets[i].x=zombies[i].x;
+                rockets[i].y=zombies[i].y+zombies[i].height/2;
+            }
+
+            if (Rect.intersects(zombies[i].getCollisionShape(), flight.getCollisionShape())) {
 
                 isGameOver = true;
                 return;
             }
         }
 
+        for(i=0;i<num_rockets;i++){
+            if (Rect.intersects(rockets[i].getCollisionShape(), flight.getCollisionShape())) {
+                isGameOver = true;
+                return;
+            }
+        }
     }
 
     private void draw () {
@@ -389,9 +414,12 @@ public class GameView extends SurfaceView implements Runnable {
                 canvas.drawBitmap(greybird.getGreyBird(), greybird.x, greybird.y, paint);
             for (Zombie zombie : zombies)
                 canvas.drawBitmap(zombie.getZombie(), zombie.x, zombie.y, paint);
-
+            for(int i=0;i<num_rockets;i++){
+                if(rockets[i].x+rockets[i].width>0){
+                    canvas.drawBitmap(rockets[i].rocket, rockets[i].x, rockets[i].y, paint);
+                }
+            }
             canvas.drawText(score + "", screenX / 2f, 164, paint);
-
             if (isGameOver) {
                 isPlaying = false;
                 canvas.drawBitmap(flight.getDead(), flight.x, flight.y, paint);

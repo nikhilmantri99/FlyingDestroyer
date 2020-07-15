@@ -132,6 +132,10 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/country_platform_tiles_example.png"
     },
     {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_rocket_weapon.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/rocket_weapon.png"
+    },
+    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_zombie_walk9.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/zombie_walk9.png"
     },
