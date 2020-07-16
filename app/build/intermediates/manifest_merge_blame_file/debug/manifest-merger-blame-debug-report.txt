@@ -23,36 +23,35 @@
 16-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:8:9-41
 17        android:supportsRtl="true"
 17-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:9:9-35
-18        android:testOnly="true"
-19        android:theme="@style/AppTheme" >
-19-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:10:9-40
-20        <activity
-20-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:11:9-13:58
-21            android:name="com.heyletscode.FlyingDestroyer.GameActivity"
-21-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:11:19-47
-22            android:screenOrientation="landscape"
-22-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:12:13-50
-23            android:theme="@style/AppTheme.noActionBar" />
-23-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:13:13-56
-24        <activity
-24-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:14:9-23:20
-25            android:name="com.heyletscode.FlyingDestroyer.MainActivity"
-25-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:15:13-41
-26            android:screenOrientation="landscape"
-26-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:16:13-50
-27            android:theme="@style/AppTheme.noActionBar" >
-27-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:17:13-56
-28            <intent-filter>
-28-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:18:13-22:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:19:17-69
-29-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:19:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:21:17-77
-31-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:21:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
-35
-36</manifest>
+18        android:theme="@style/AppTheme" >
+18-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:10:9-40
+19        <activity
+19-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:11:9-13:58
+20            android:name="com.heyletscode.FlyingDestroyer.GameActivity"
+20-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:11:19-47
+21            android:screenOrientation="landscape"
+21-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:12:13-50
+22            android:theme="@style/AppTheme.noActionBar" />
+22-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:13:13-56
+23        <activity
+23-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:14:9-23:20
+24            android:name="com.heyletscode.FlyingDestroyer.MainActivity"
+24-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:15:13-41
+25            android:screenOrientation="landscape"
+25-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:16:13-50
+26            android:theme="@style/AppTheme.noActionBar" >
+26-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:17:13-56
+27            <intent-filter>
+27-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:19:17-69
+28-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:21:17-77
+30-->/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

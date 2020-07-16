@@ -50,39 +50,44 @@ public class Dino {
 
     Bitmap getDino () {
 
-        if (dinocounter == 1) {
+        if (dinocounter == 1 || dinocounter == 2) {
             dinocounter++;
             return dino1;
         }
 
-        if (dinocounter == 2) {
+        if (dinocounter == 3 || dinocounter == 4) {
             dinocounter++;
             return dino2;
         }
 
-        if (dinocounter == 3) {
+        if (dinocounter == 5 || dinocounter == 6) {
             dinocounter++;
             return dino3;
         }
 
-        if (dinocounter == 4) {
+        if (dinocounter == 7 || dinocounter == 8) {
             dinocounter++;
             return dino4;
         }
 
-        if (dinocounter == 5) {
+        if (dinocounter == 9 ||dinocounter == 10) {
             dinocounter++;
             return dino5;
         }
 
-        if (dinocounter == 6) {
+        if (dinocounter == 11 || dinocounter == 12) {
             dinocounter++;
             return dino6;
         }
 
-        if (dinocounter == 7) {
+        if (dinocounter == 13 || dinocounter == 14) {
             dinocounter++;
             return dino7;
+        }
+
+        if(dinocounter == 15){
+            dinocounter++;
+            return dino8;
         }
 
         dinocounter = 1;

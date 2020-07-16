@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/country_platform_preview"
+        android:src="@drawable/platformer_background_4"
         android:scaleType="centerCrop"/>
 
     <ImageView

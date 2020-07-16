@@ -38,7 +38,7 @@ public class GameView extends SurfaceView implements Runnable {
     private int sound;
     private Flight flight;
     private GameActivity activity;
-    private Background background_back,background_mid1,background_mid2,background_front1, background_front2;
+    private Background bg_ground1,bg_ground2,bg_treerocks1,bg_treerocks2,bg_hillscastle1,bg_hillscastle2,bg_clouds1,bg_clouds2,bg_hills,bg_rocks,bg_sky;
 
     public GameView(GameActivity activity, int screenX, int screenY) {
         super(activity);
@@ -68,17 +68,36 @@ public class GameView extends SurfaceView implements Runnable {
         this.screenY = screenY;
         screenRatioX = 1440f / screenX;
         screenRatioY = 720f / screenY;
-        background_back=new Background(screenX, screenY, getResources(),R.drawable.country_platform_back);
-        background_mid1=new Background(screenX, screenY, getResources(),R.drawable.country_platform_forest);
-        background_mid2=new Background(screenX, screenY, getResources(),R.drawable.country_platform_forest);
-        background_front1 = new Background(screenX, screenY, getResources(),R.drawable.country_platform_tiles_example);
-        background_front2 = new Background(screenX, screenY, getResources(),R.drawable.country_platform_tiles_example);
+//        background_back=new Background(screenX, screenY, getResources(),R.drawable.country_platform_back);
+//        background_mid1=new Background(screenX, screenY, getResources(),R.drawable.country_platform_forest);
+//       // background_mid2=new Background(screenX, screenY, getResources(),R.drawable.country_platform_forest);
+//        background_front1 = new Background(screenX, screenY, getResources(),R.drawable.country_platform_tiles_example);
+//        background_front2 = new Background(screenX, screenY, getResources(),R.drawable.country_platform_tiles_example);
+        bg_ground1=new Background(screenX, screenY, getResources(),R.drawable.layer01_ground);
+        bg_ground2=new Background(screenX, screenY, getResources(),R.drawable.layer01_ground);
+
+        bg_treerocks1=new Background(screenX, screenY, getResources(),R.drawable.layer02_trees_rocks);
+        bg_treerocks2=new Background(screenX, screenY, getResources(),R.drawable.layer02_trees_rocks);
+
+        bg_hillscastle1=new Background(screenX, screenY, getResources(),R.drawable.layer03_hills_castle);
+        bg_hillscastle2=new Background(screenX, screenY, getResources(),R.drawable.layer03_hills_castle);
+
+        bg_clouds1=new Background(screenX, screenY, getResources(),R.drawable.layer04_clouds);
+        bg_clouds2=new Background(screenX, screenY, getResources(),R.drawable.layer04_clouds);
+
+        bg_hills=new Background(screenX, screenY, getResources(),R.drawable.layer05_hills);
+        bg_rocks=new Background(screenX, screenY, getResources(),R.drawable.layer06_rocks);
+        bg_sky=new Background(screenX, screenY, getResources(),R.drawable.layer07_sky);
 
         flight = new Flight(this, screenY, getResources());
 
         bullets = new ArrayList<>();
 
-        background_front2.x = screenX;
+//        background_front2.x = screenX;
+        bg_ground2.x=bg_ground1.background.getWidth();
+        bg_treerocks2.x=bg_treerocks1.background.getWidth();
+        bg_hillscastle2.x=bg_hillscastle1.background.getWidth();
+        bg_clouds2.x=bg_clouds1.background.getWidth();
 
         paint = new Paint();
         paint.setTextSize(128);
@@ -151,23 +170,57 @@ public class GameView extends SurfaceView implements Runnable {
 //        background_mid1.x -= 5 * screenRatioX;
 //        background_mid2.x -= 5 * screenRatioX;
 
-        background_front1.x -= 10 * screenRatioX;
-        background_front2.x -= 10 * screenRatioX;
-
-//        if (background_mid1.x + background_mid1.background.getWidth() < 0) {
-//            background_mid1.x = screenX;
+//        background_front1.x -= 10 * screenRatioX;
+//        background_front2.x -= 10 * screenRatioX;
+//
+//        if (background_front1.x + background_front1.background.getWidth() < 0) {
+//            background_front1.x = screenX;
 //        }
 //
-//        if (background_mid2.x + background_mid2.background.getWidth() < 0) {
-//            background_mid2.x = screenX;
+//        if (background_front2.x + background_front2.background.getWidth() < 0) {
+//            background_front2.x = screenX;
 //        }
-        if (background_front1.x + background_front1.background.getWidth() < 0) {
-            background_front1.x = screenX;
+
+        bg_ground1.x-=10*screenRatioX;
+        bg_ground2.x-=10*screenRatioX;
+        if (bg_ground1.x + bg_ground1.background.getWidth() < 0) {
+            bg_ground1.x = bg_ground1.background.getWidth();
         }
 
-        if (background_front2.x + background_front2.background.getWidth() < 0) {
-            background_front2.x = screenX;
+        if (bg_ground2.x + bg_ground2.background.getWidth() < 0) {
+            bg_ground2.x = bg_ground2.background.getWidth();
         }
+
+        bg_treerocks1.x-=10*screenRatioX;
+        bg_treerocks2.x-=10*screenRatioX;
+        if (bg_treerocks1.x + bg_treerocks1.background.getWidth() < 0) {
+            bg_treerocks1.x = bg_treerocks1.background.getWidth();
+        }
+
+        if (bg_treerocks2.x + bg_treerocks2.background.getWidth() < 0) {
+            bg_treerocks2.x = bg_treerocks2.background.getWidth();
+        }
+
+        bg_hillscastle1.x-=5*screenRatioX;
+        bg_hillscastle2.x-=5*screenRatioX;
+        if (bg_hillscastle1.x + bg_hillscastle1.background.getWidth() < 0) {
+            bg_hillscastle1.x = bg_hillscastle1.background.getWidth();
+        }
+
+        if (bg_hillscastle2.x + bg_hillscastle2.background.getWidth() < 0) {
+            bg_hillscastle2.x = bg_hillscastle2.background.getWidth();
+        }
+
+        bg_clouds1.x-=5*screenRatioX;
+        bg_clouds2.x-=5*screenRatioX;
+        if (bg_clouds1.x + bg_clouds1.background.getWidth() < 0) {
+            bg_clouds1.x = bg_clouds1.background.getWidth();
+        }
+
+        if (bg_clouds2.x + bg_clouds2.background.getWidth() < 0) {
+            bg_clouds2.x = bg_clouds2.background.getWidth();
+        }
+
 
         if (flight.isGoingUp)
             flight.y -= 30 * screenRatioY;
@@ -256,30 +309,32 @@ public class GameView extends SurfaceView implements Runnable {
         for (Bullet bullet : trash)
             bullets.remove(bullet);
 
-        for (Bird bird : birds) {
+        for (i=0;i<num_birds;i++) {
 
-            bird.x -= bird.speed;
+            birds[i].x -= birds[i].speed;
 
-            if (bird.x + bird.width < 0) {
+            if (birds[i].x + birds[i].width < 0) {
 
 //                if (!bird.wasShot) {
 //                    isGameOver = true;
 //                    return;
 //                }
 
-                int bound = (int) (30 * screenRatioX);
-                bird.speed = random.nextInt(bound);
+                int bound = (int) (50 * screenRatioX);
+                birds[i].speed = random.nextInt(bound);
 
-                if (bird.speed < 20* screenRatioX)
-                    bird.speed = (int) (20 * screenRatioX);
+                if (birds[i].speed < 30* screenRatioX)
+                    birds[i].speed = (int) (30 * screenRatioX);
 
-                bird.x = screenX;
-                bird.y = random.nextInt(screenY - 4*bird.height);
+                int lower_bound=i*(screenY - 3*birds[i].height)/num_birds;
+                int upper_bound=(i+1)*(screenY - 3*birds[i].height)/num_birds;
+                birds[i].x = screenX;
+                birds[i].y = random.nextInt(upper_bound-lower_bound+1)+lower_bound;
 
-                bird.wasShot = false;
+                birds[i].wasShot = false;
             }
 
-            if (Rect.intersects(bird.getCollisionShape(), flight.getCollisionShape())) {
+            if (Rect.intersects(birds[i].getCollisionShape(), flight.getCollisionShape())) {
 
                 isGameOver = true;
                 return;
@@ -298,14 +353,14 @@ public class GameView extends SurfaceView implements Runnable {
 //                    return;
 //                }
 
-                int bound = (int) (30 * screenRatioX);
+                int bound = (int) (40 * screenRatioX);
                 dino.speed = random.nextInt(bound);
 
-                if (dino.speed < 10 * screenRatioX)
-                    dino.speed = (int) (10 * screenRatioX);
+                if (dino.speed < 20 * screenRatioX)
+                    dino.speed = (int) (20 * screenRatioX);
 
                 dino.x = screenX;
-                dino.y = screenY-dino.height-100;
+                dino.y = screenY-dino.height-140;
 
                 dino.wasShot = false;
             }
@@ -318,30 +373,32 @@ public class GameView extends SurfaceView implements Runnable {
 
         }
 
-        for (GreyBird greybird : greybirds) {
+        for (i=0;i<num_greybirds;i++) {
 
-            greybird.x -= greybird.speed;
+            greybirds[i].x -= greybirds[i].speed;
 
-            if (greybird.x + greybird.width < 0) {
+            if (greybirds[i].x + greybirds[i].width < 0) {
 
-//                if (!greybird.wasShot) {
+//                if (!bird.wasShot) {
 //                    isGameOver = true;
 //                    return;
 //                }
 
-                int bound = (int) (30 * screenRatioX);
-                greybird.speed = random.nextInt(bound);
+                int bound = (int) (50 * screenRatioX);
+                greybirds[i].speed = random.nextInt(bound);
 
-                if (greybird.speed < 20 * screenRatioX)
-                    greybird.speed = (int) (20 * screenRatioX);
+                if (greybirds[i].speed < 40* screenRatioX)
+                    greybirds[i].speed = (int) (40 * screenRatioX);
 
-                greybird.x = screenX;
-                greybird.y = random.nextInt(screenY - 4*greybird.height);
+                int lower_bound=i*(screenY - 3*greybirds[i].height)/num_birds;
+                int upper_bound=(i+1)*(screenY - 3*greybirds[i].height)/num_birds;
+                greybirds[i].x = screenX;
+                greybirds[i].y = random.nextInt(upper_bound-lower_bound+1)+lower_bound;
 
-                greybird.wasShot = false;
+                greybirds[i].wasShot = false;
             }
 
-            if (Rect.intersects(greybird.getCollisionShape(), flight.getCollisionShape())) {
+            if (Rect.intersects(greybirds[i].getCollisionShape(), flight.getCollisionShape())) {
 
                 isGameOver = true;
                 return;
@@ -361,11 +418,11 @@ public class GameView extends SurfaceView implements Runnable {
 //                    return;
 //                }
 
-                int bound = (int) (30 * screenRatioX);
+                int bound = (int) (40 * screenRatioX);
                 zombies[i].speed = random.nextInt(bound);
 
-                if (zombies[i].speed < 10 * screenRatioX)
-                    zombies[i].speed = (int) (10 * screenRatioX);
+                if (zombies[i].speed < 25 * screenRatioX)
+                    zombies[i].speed = (int) (25 * screenRatioX);
 
                 zombies[i].x = screenX;
                 zombies[i].y = screenY-zombies[i].height-150;
@@ -396,15 +453,26 @@ public class GameView extends SurfaceView implements Runnable {
     }
 
     private void draw () {
-
         if (getHolder().getSurface().isValid()) {
 
             Canvas canvas = getHolder().lockCanvas();
-            canvas.drawBitmap(background_back.background, background_back.x, background_back.y, paint);
-            canvas.drawBitmap(background_mid1.background, background_mid1.x, background_mid1.y, paint);
-            canvas.drawBitmap(background_mid2.background, background_mid2.x, background_mid2.y, paint);
-            canvas.drawBitmap(background_front1.background, background_front1.x, background_front1.y, paint);
-            canvas.drawBitmap(background_front2.background, background_front2.x, background_front2.y, paint);
+//            canvas.drawBitmap(background_back.background, background_back.x, background_back.y, paint);
+//            canvas.drawBitmap(background_mid1.background, background_mid1.x, background_mid1.y, paint);
+//            //canvas.drawBitmap(background_mid2.background, background_mid2.x, background_mid2.y, paint);
+//            canvas.drawBitmap(background_front1.background, background_front1.x, background_front1.y, paint);
+//            canvas.drawBitmap(background_front2.background, background_front2.x, background_front2.y, paint);
+
+            canvas.drawBitmap(bg_sky.background, bg_sky.x, bg_sky.y, paint);
+            canvas.drawBitmap(bg_rocks.background, bg_rocks.x, bg_rocks.y, paint);
+            canvas.drawBitmap(bg_hills.background, bg_hills.x, bg_hills.y, paint);
+            canvas.drawBitmap(bg_clouds1.background, bg_clouds1.x, bg_clouds1.y, paint);
+            canvas.drawBitmap(bg_clouds2.background, bg_clouds2.x, bg_clouds2.y, paint);
+            canvas.drawBitmap(bg_hillscastle1.background, bg_hillscastle1.x, bg_hillscastle1.y, paint);
+            canvas.drawBitmap(bg_hillscastle2.background, bg_hillscastle2.x, bg_hillscastle2.y, paint);
+            canvas.drawBitmap(bg_treerocks1.background, bg_treerocks1.x, bg_treerocks1.y, paint);
+            canvas.drawBitmap(bg_treerocks2.background, bg_treerocks2.x, bg_treerocks2.y, paint);
+            canvas.drawBitmap(bg_ground1.background, bg_ground1.x, bg_ground1.y, paint);
+            canvas.drawBitmap(bg_ground2.background, bg_ground2.x, bg_ground2.y, paint);
 
             for (Bird bird : birds)
                 canvas.drawBitmap(bird.getBird(), bird.x, bird.y, paint);
@@ -464,7 +532,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     private void sleep () {
         try {
-            Thread.sleep(10);
+            Thread.sleep(2);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

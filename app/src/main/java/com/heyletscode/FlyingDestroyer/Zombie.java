@@ -104,7 +104,7 @@ public class Zombie {
     }
 
     Rect getCollisionShape () {
-        return new Rect(x+width/4, y+height/4, x + width, y + height);
+        return new Rect(x+width/4, y+height/4, x + 4*width/5, y + 4*height/5);
     }
 
 }
