@@ -7,11 +7,21 @@ import android.graphics.Rect;
 
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioX;
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioY;
+import static com.heyletscode.FlyingDestroyer.GameView.screenInches;
 
 public class Bullet {
 
     int x, y, width, height;
     Bitmap bullet;
+
+    double absolute(double t){
+        if(t<0){
+            return -t;
+        }
+        else{
+            return t;
+        }
+    }
 
     Bullet (Resources res) {
 
@@ -20,8 +30,14 @@ public class Bullet {
         width = bullet.getWidth();
         height = bullet.getHeight();
 
-        width /= 4;
-        height /= 4;
+        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
+            width /= 5;
+            height /= 5;
+        }
+        else{
+            width /= 4;
+            height /= 4;
+        }
 
         width = (int) (width * screenRatioX);
         height = (int) (height * screenRatioY);

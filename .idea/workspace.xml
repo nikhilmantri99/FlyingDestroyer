@@ -10,7 +10,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a96f294-669b-4fce-95fa-8429320b4bd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_volume_off_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_volume_up_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-hdpi/ic_volume_off_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-hdpi/ic_volume_up_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-ldpi/ic_volume_off_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-ldpi/ic_volume_up_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-mdpi/ic_volume_off_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-mdpi/ic_volume_up_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_volume_off_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_volume_up_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_volume_off_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_volume_up_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_volume_off_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_volume_up_black_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Bird.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/GameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/GameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/GreyBird.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/GreyBird.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/MainActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Rocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Zombie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Bird.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Bird.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Flight.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Flight.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/GameView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/GameView.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/GreyBird.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/GreyBird.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/MainActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/MainActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Rocket.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Rocket.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Zombie.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Zombie.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Dino.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Dino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/GameActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/GameActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/GreyBird.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/GreyBird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Rocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Zombie.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Zombie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/FlyingDestroyer1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/flyingdestroyer1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/FlyingDestroyer2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/flyingdestroyer2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/FlyingDestroyer3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/flyingdestroyer3.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +114,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
@@ -149,10 +214,15 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="644" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594968824211">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="644" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594968824211" />
     <state x="631" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594892839807">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -165,22 +235,22 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="693" y="223" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1594367386494" />
-    <state width="1860" height="378" key="GridCell.Tab.0.bottom" timestamp="1594724341373">
+    <state width="1860" height="193" key="GridCell.Tab.0.bottom" timestamp="1594978887080">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1594724341373" />
-    <state width="1860" height="378" key="GridCell.Tab.0.center" timestamp="1594724341373">
+    <state width="1860" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1594978887080" />
+    <state width="1860" height="193" key="GridCell.Tab.0.center" timestamp="1594978887080">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="378" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1594724341373" />
-    <state width="1860" height="378" key="GridCell.Tab.0.left" timestamp="1594724341373">
+    <state width="1860" height="193" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1594978887080" />
+    <state width="1860" height="193" key="GridCell.Tab.0.left" timestamp="1594978887080">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="378" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1594724341373" />
-    <state width="1860" height="378" key="GridCell.Tab.0.right" timestamp="1594724341373">
+    <state width="1860" height="193" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1594978887080" />
+    <state width="1860" height="193" key="GridCell.Tab.0.right" timestamp="1594978887080">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="378" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1594724341373" />
+    <state width="1860" height="193" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1594978887080" />
     <state x="456" y="193" key="Vcs.Push.Dialog.v2" timestamp="1594367238250">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -189,17 +259,17 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="692" y="288" key="chooseDestDirectoryDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594455534521" />
-    <state x="550" y="311" key="com.intellij.ide.util.TipDialog" timestamp="1594889310021">
+    <state x="550" y="311" key="com.intellij.ide.util.TipDialog" timestamp="1594968977984">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="550" y="311" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594889310021" />
+    <state x="550" y="311" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594968977984" />
     <state x="631" y="221" key="extract.method.dialog" timestamp="1594373953699">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="631" y="221" key="extract.method.dialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594373953699" />
-    <state x="441" y="123" width="1037" height="798" key="find.popup" timestamp="1594896820017">
+    <state x="441" y="123" width="1037" height="798" key="find.popup" timestamp="1594977173658">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="441" y="123" width="1037" height="798" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1594896820017" />
+    <state x="441" y="123" width="1037" height="798" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1594977173658" />
   </component>
 </project>

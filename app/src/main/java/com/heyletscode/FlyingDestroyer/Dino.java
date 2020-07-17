@@ -7,6 +7,7 @@ import android.graphics.Rect;
 
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioX;
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioY;
+import static com.heyletscode.FlyingDestroyer.GameView.screenInches;
 
 public class Dino {
 
@@ -14,6 +15,15 @@ public class Dino {
     public boolean wasShot = true;
     int x = 0, y, width, height, dinocounter = 1;
     Bitmap dino1, dino2, dino3, dino4,dino5,dino6,dino7,dino8;
+
+    double absolute(double t){
+        if(t<0){
+            return -t;
+        }
+        else{
+            return t;
+        }
+    }
 
     Dino (Resources res) {
 
@@ -29,8 +39,14 @@ public class Dino {
         width = dino1.getWidth();
         height = dino1.getHeight();
 
-        width /= 3;
-        height /= 3;
+        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
+            width /= 4;
+            height /= 4;
+        }
+        else{
+            width /= 3;
+            height /= 3;
+        }
 
         width = (int) (width * screenRatioX);
         height = (int) (height * screenRatioY);

@@ -7,6 +7,7 @@ import android.graphics.Rect;
 
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioX;
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioY;
+import static com.heyletscode.FlyingDestroyer.GameView.screenInches;
 
 public class Zombie {
 
@@ -14,6 +15,15 @@ public class Zombie {
     public boolean wasShot = true;
     int x = 0, y, width, height, zombiencounter = 1,health=2;
     Bitmap zombie1, zombie2, zombie3, zombie4,zombie5,zombie6,zombie7,zombie8,zombie9,zombie10;
+
+    double absolute(double t){
+        if(t<0){
+            return -t;
+        }
+        else{
+            return t;
+        }
+    }
 
     Zombie (Resources res) {
 
@@ -31,8 +41,14 @@ public class Zombie {
         width = zombie1.getWidth();
         height = zombie1.getHeight();
 
-        width /= 3;
-        height /= 3;
+        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
+            width /= 4;
+            height /= 4;
+        }
+        else{
+            width /= 3;
+            height /= 3;
+        }
 
         width = (int) (width * screenRatioX);
         height = (int) (height * screenRatioY);

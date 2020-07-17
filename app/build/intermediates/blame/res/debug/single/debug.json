@@ -36,20 +36,20 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_zombie_walk3.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/zombie_walk3.png"
     },
     {
-        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_bird3.png.flat",
-        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/bird3.png"
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_playbutton.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/playbutton.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_bird3.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/bird3.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_layer02_trees_rocks.png.flat",
@@ -60,8 +60,16 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/dino_run_1.png"
     },
     {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_flyingdestroyer3.jpg.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/flyingdestroyer3.jpg"
+    },
+    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_fly1.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/fly1.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_flying_destroyer_button.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/flying_destroyer_button.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_shoot2.png.flat",
@@ -72,16 +80,12 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_flying_destroyer_button.png.flat",
-        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/flying_destroyer_button.png"
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_layer03_hills_castle.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/layer03_hills_castle.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_bird1.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/bird1.png"
-    },
-    {
-        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_layer03_hills_castle.png.flat",
-        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/layer03_hills_castle.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_zombie_walk5.png.flat",
@@ -100,12 +104,12 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/zombie_walk2.png"
     },
     {
-        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_bird4.png.flat",
-        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/bird4.png"
-    },
-    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_soundoff.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/soundoff.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-v24_bird4.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable-v24/bird4.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_night_snow.jpg.flat",
@@ -138,6 +142,10 @@
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_redbird2.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/redbird2.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_flyingdestroyer2.jpg.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/flyingdestroyer2.jpg"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -224,6 +232,10 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/dino_run_8.png"
     },
     {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_flyingdestroyer1.jpg.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/flyingdestroyer1.jpg"
+    },
+    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
@@ -232,12 +244,12 @@
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/grey_bird_4.png"
     },
     {
-        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_zombie_walk7.png.flat",
-        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/zombie_walk7.png"
-    },
-    {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_redbird1.png.flat",
         "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/redbird1.png"
+    },
+    {
+        "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_zombie_walk7.png.flat",
+        "source": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/src/main/res/drawable/zombie_walk7.png"
     },
     {
         "merged": "/home/nikhil/Apps/games/Flygame/2D-Game-In-Android-Studio/FlyingDestroyer/app/build/intermediates/res/merged/debug/drawable_dino_run_6.png.flat",

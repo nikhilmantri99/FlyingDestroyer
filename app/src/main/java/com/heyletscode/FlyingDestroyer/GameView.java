@@ -25,6 +25,7 @@ public class GameView extends SurfaceView implements Runnable {
     private boolean isPlaying, isGameOver = false;
     private int screenX, screenY, score = 0;
     public static float screenRatioX, screenRatioY;
+    public static double screenInches;
     private Paint paint;
     private Bird[] birds;
     private Dino[] dinos;
@@ -40,7 +41,7 @@ public class GameView extends SurfaceView implements Runnable {
     private GameActivity activity;
     private Background bg_ground1,bg_ground2,bg_treerocks1,bg_treerocks2,bg_hillscastle1,bg_hillscastle2,bg_clouds1,bg_clouds2,bg_hills,bg_rocks,bg_sky;
 
-    public GameView(GameActivity activity, int screenX, int screenY) {
+    public GameView(GameActivity activity, int screenX, int screenY, double screenInches) {
         super(activity);
 
         this.activity = activity;
@@ -66,6 +67,7 @@ public class GameView extends SurfaceView implements Runnable {
 
         this.screenX = screenX;
         this.screenY = screenY;
+        this.screenInches=screenInches;
         screenRatioX = 1440f / screenX;
         screenRatioY = 720f / screenY;
 //        background_back=new Background(screenX, screenY, getResources(),R.drawable.country_platform_back);

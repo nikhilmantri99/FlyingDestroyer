@@ -645,6 +645,9 @@ drawable dino_run_8
 drawable fly1
 drawable fly2
 drawable flying_destroyer_button
+drawable flyingdestroyer1
+drawable flyingdestroyer2
+drawable flyingdestroyer3
 drawable grey_bird_1
 drawable grey_bird_2
 drawable grey_bird_3

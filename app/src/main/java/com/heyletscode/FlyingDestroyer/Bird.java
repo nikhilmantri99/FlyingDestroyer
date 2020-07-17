@@ -7,6 +7,7 @@ import android.graphics.Rect;
 
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioX;
 import static com.heyletscode.FlyingDestroyer.GameView.screenRatioY;
+import static com.heyletscode.FlyingDestroyer.GameView.screenInches;
 
 public class Bird {
 
@@ -14,6 +15,15 @@ public class Bird {
     public boolean wasShot = true;
     int x = 0, y, width, height, birdCounter = 1;
     Bitmap bird1, bird2, bird3, bird4;
+
+    double absolute(double t){
+        if(t<0){
+            return -t;
+        }
+        else{
+            return t;
+        }
+    }
 
     Bird (Resources res) {
 
@@ -24,9 +34,14 @@ public class Bird {
 
         width = bird1.getWidth();
         height = bird1.getHeight();
-
-        width /= 8;
-        height /= 8;
+        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
+            width /= 10;
+            height /= 10;
+        }
+        else{
+            width /= 8;
+            height /= 8;
+        }
 
         width = (int) (width * screenRatioX);
         height = (int) (height * screenRatioY);
