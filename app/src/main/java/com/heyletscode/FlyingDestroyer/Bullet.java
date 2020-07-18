@@ -30,9 +30,9 @@ public class Bullet {
         width = bullet.getWidth();
         height = bullet.getHeight();
 
-        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
-            width /= 5;
-            height /= 5;
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            width /= 6;
+            height /= 6;
         }
         else{
             width /= 4;

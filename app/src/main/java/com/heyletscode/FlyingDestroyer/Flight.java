@@ -36,9 +36,9 @@ public class Flight {
         width = flight1.getWidth();
         height = flight1.getHeight();
 
-        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
-            width /= 4;
-            height /= 4;
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            width /= 6;
+            height /= 6;
         }
         else{
             width /=3;

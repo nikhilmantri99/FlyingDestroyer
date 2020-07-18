@@ -34,9 +34,9 @@ public class Bird {
 
         width = bird1.getWidth();
         height = bird1.getHeight();
-        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
-            width /= 10;
-            height /= 10;
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            width /= 15;
+            height /= 15;
         }
         else{
             width /= 8;

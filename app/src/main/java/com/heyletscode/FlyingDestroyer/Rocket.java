@@ -30,9 +30,9 @@ public class Rocket {
         width = rocket.getWidth();
         height = rocket.getHeight();
 
-        if(absolute(screenInches-5.50)<absolute(screenInches-6.55)){
-            width /= 3;
-            height /= 3;
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            width /= 5;
+            height /= 5;
         }
         else{
             width /= 2;

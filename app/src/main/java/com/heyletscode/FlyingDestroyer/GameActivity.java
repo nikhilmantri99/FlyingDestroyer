@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.WindowManager;
 
 public class GameActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class GameActivity extends AppCompatActivity {
         double x = Math.pow(point.x/dm.xdpi,2);
         double y = Math.pow(point.y/dm.ydpi,2);
         double screenInches = Math.sqrt(x+y);
-
+        Log.d("debug","screenInches:"+screenInches);
         gameView = new GameView(this, point.x, point.y,screenInches);
 
         setContentView(gameView);

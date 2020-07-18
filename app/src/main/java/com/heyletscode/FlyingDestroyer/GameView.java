@@ -11,6 +11,7 @@ import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Build;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 
@@ -41,6 +42,15 @@ public class GameView extends SurfaceView implements Runnable {
     private GameActivity activity;
     private Background bg_ground1,bg_ground2,bg_treerocks1,bg_treerocks2,bg_hillscastle1,bg_hillscastle2,bg_clouds1,bg_clouds2,bg_hills,bg_rocks,bg_sky;
 
+    double absolute(double t){
+        if(t<0){
+            return -t;
+        }
+        else{
+            return t;
+        }
+    }
+
     public GameView(GameActivity activity, int screenX, int screenY, double screenInches) {
         super(activity);
 
@@ -68,6 +78,9 @@ public class GameView extends SurfaceView implements Runnable {
         this.screenX = screenX;
         this.screenY = screenY;
         this.screenInches=screenInches;
+
+        Log.d("debug","vivo screenInches:"+this.screenInches);
+
         screenRatioX = 1440f / screenX;
         screenRatioY = 720f / screenY;
 //        background_back=new Background(screenX, screenY, getResources(),R.drawable.country_platform_back);
@@ -193,6 +206,13 @@ public class GameView extends SurfaceView implements Runnable {
             bg_ground2.x = bg_ground2.background.getWidth();
         }
 
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            Log.d("debug:",this.screenInches+" screen is closer to 5.00");
+        }
+        else{
+            Log.d("debug:",this.screenInches+" screen is closer to 6.55");
+        }
+
         bg_treerocks1.x-=10*screenRatioX;
         bg_treerocks2.x-=10*screenRatioX;
         if (bg_treerocks1.x + bg_treerocks1.background.getWidth() < 0) {
@@ -224,10 +244,18 @@ public class GameView extends SurfaceView implements Runnable {
         }
 
 
+        int flightupspeed;
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            flightupspeed=15;
+        }
+        else{
+            flightupspeed=30;
+        }
+
         if (flight.isGoingUp)
-            flight.y -= 30 * screenRatioY;
+            flight.y -= flightupspeed * screenRatioY;
         else
-            flight.y += 30 * screenRatioY;
+            flight.y += flightupspeed * screenRatioY;
 
         if (flight.y < 0)
             flight.y = 0;
@@ -242,7 +270,14 @@ public class GameView extends SurfaceView implements Runnable {
             if (bullet.x > screenX)
                 trash.add(bullet);
 
-            bullet.x += 50 * screenRatioX;
+            int top_speed;
+            if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                top_speed=45;
+            }
+            else{
+                top_speed=50;
+            }
+            bullet.x += top_speed * screenRatioX;
 
             for (Bird bird : birds) {
 
@@ -321,12 +356,21 @@ public class GameView extends SurfaceView implements Runnable {
 //                    isGameOver = true;
 //                    return;
 //                }
+                int top_speed, min_speed;
+                if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                    top_speed=30;
+                    min_speed=15;
+                }
+                else{
+                    top_speed=45;
+                    min_speed=30;
+                }
 
-                int bound = (int) (50 * screenRatioX);
+                int bound = (int) (top_speed * screenRatioX);
                 birds[i].speed = random.nextInt(bound);
 
-                if (birds[i].speed < 30* screenRatioX)
-                    birds[i].speed = (int) (30 * screenRatioX);
+                if (birds[i].speed < min_speed* screenRatioX)
+                    birds[i].speed = (int) (min_speed * screenRatioX);
 
                 int lower_bound=i*(screenY - 3*birds[i].height)/num_birds;
                 int upper_bound=(i+1)*(screenY - 3*birds[i].height)/num_birds;
@@ -354,15 +398,28 @@ public class GameView extends SurfaceView implements Runnable {
 //                    isGameOver = true;
 //                    return;
 //                }
-
-                int bound = (int) (40 * screenRatioX);
+                int top_speed, min_speed;
+                if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                    top_speed=30;
+                    min_speed=10;
+                }
+                else{
+                    top_speed=40;
+                    min_speed=20;
+                }
+                int bound = (int) (top_speed* screenRatioX);
                 dino.speed = random.nextInt(bound);
 
-                if (dino.speed < 20 * screenRatioX)
-                    dino.speed = (int) (20 * screenRatioX);
+                if (dino.speed < min_speed * screenRatioX)
+                    dino.speed = (int) (min_speed * screenRatioX);
 
                 dino.x = screenX;
-                dino.y = screenY-dino.height-140;
+                if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                    dino.y = screenY-dino.height-80;
+                }
+                else{
+                    dino.y = screenY-dino.height-140;
+                }
 
                 dino.wasShot = false;
             }
@@ -386,11 +443,22 @@ public class GameView extends SurfaceView implements Runnable {
 //                    return;
 //                }
 
-                int bound = (int) (50 * screenRatioX);
+                int top_speed, min_speed;
+                if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                    top_speed=20;
+                    min_speed=12;
+                }
+                else{
+                    top_speed=50;
+                    min_speed=40;
+                }
+
+
+                int bound = (int) (top_speed * screenRatioX);
                 greybirds[i].speed = random.nextInt(bound);
 
-                if (greybirds[i].speed < 40* screenRatioX)
-                    greybirds[i].speed = (int) (40 * screenRatioX);
+                if (greybirds[i].speed < min_speed* screenRatioX)
+                    greybirds[i].speed = (int) (min_speed * screenRatioX);
 
                 int lower_bound=i*(screenY - 3*greybirds[i].height)/num_birds;
                 int upper_bound=(i+1)*(screenY - 3*greybirds[i].height)/num_birds;
@@ -419,21 +487,34 @@ public class GameView extends SurfaceView implements Runnable {
 //                    isGameOver = true;
 //                    return;
 //                }
-
-                int bound = (int) (40 * screenRatioX);
+                int top_speed, min_speed;
+                if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                    top_speed=25;
+                    min_speed=15;
+                }
+                else{
+                    top_speed=40;
+                    min_speed=30;
+                }
+                int bound = (int) (top_speed * screenRatioX);
                 zombies[i].speed = random.nextInt(bound);
 
-                if (zombies[i].speed < 25 * screenRatioX)
-                    zombies[i].speed = (int) (25 * screenRatioX);
+                if (zombies[i].speed < min_speed * screenRatioX)
+                    zombies[i].speed = (int) (min_speed * screenRatioX);
 
                 zombies[i].x = screenX;
-                zombies[i].y = screenY-zombies[i].height-150;
+                if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+                    zombies[i].y = screenY-zombies[i].height-100;
+                }
+                else{
+                    zombies[i].y = screenY-zombies[i].height-150;
+                }
 
                 zombies[i].wasShot = false;
             }
 
             if(rockets[i].x + rockets[i].width<0 && zombies[i].wasShot==false){
-                int bound=(int)(zombies[i].speed+20*screenRatioX);
+                int bound=(int)(zombies[i].speed+10*screenRatioX);
                 rockets[i].speed=bound;
                 rockets[i].x=zombies[i].x;
                 rockets[i].y=zombies[i].y+zombies[i].height/2;
@@ -533,8 +614,15 @@ public class GameView extends SurfaceView implements Runnable {
     }
 
     private void sleep () {
+        int t;
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            t=10;
+        }
+        else{
+            t=2;
+        }
         try {
-            Thread.sleep(2);
+            Thread.sleep(t);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
