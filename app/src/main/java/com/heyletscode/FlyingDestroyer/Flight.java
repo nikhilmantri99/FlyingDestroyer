@@ -67,7 +67,13 @@ public class Flight {
         dead = Bitmap.createScaledBitmap(dead, width, height, false);
 
         y = screenY / 2;
-        x = (int) (64 * screenRatioX);
+        x = (int) (32 * screenRatioX);
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            x = (int) (32 * screenRatioX);
+        }
+        else{
+            x = (int) (64 * screenRatioX);
+        }
 
     }
 

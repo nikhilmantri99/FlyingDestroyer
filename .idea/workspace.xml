@@ -17,13 +17,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Background.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Bird.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Bullet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Dino.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Dino.class" afterDir="false" />
@@ -33,9 +30,7 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/GreyBird.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/GreyBird.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Rocket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Zombie.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/heyletscode/FlyingDestroyer/Zombie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Background.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Background.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Bird.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Bird.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Bullet.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Bullet.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Dino.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Dino.dex" afterDir="false" />
@@ -45,13 +40,15 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/GreyBird.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/GreyBird.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Rocket.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Rocket.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Zombie.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/heyletscode/FlyingDestroyer/Zombie.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/heyletscode/FlyingDestroyer/Flight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="98149831" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="NZBIZTVKTGEMBMOF" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -86,7 +83,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="98149831" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-18T04:02:20.264Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-19T07:01:32.906Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
@@ -207,22 +204,22 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="693" y="223" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1594367386494" />
-    <state width="1860" height="464" key="GridCell.Tab.0.bottom" timestamp="1595141346255">
+    <state width="1860" height="377" key="GridCell.Tab.0.bottom" timestamp="1595141653084">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="464" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1595141346255" />
-    <state width="1860" height="464" key="GridCell.Tab.0.center" timestamp="1595141346255">
+    <state width="1860" height="377" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1595141653084" />
+    <state width="1860" height="377" key="GridCell.Tab.0.center" timestamp="1595141653083">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="464" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1595141346255" />
-    <state width="1860" height="464" key="GridCell.Tab.0.left" timestamp="1595141346254">
+    <state width="1860" height="377" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1595141653083" />
+    <state width="1860" height="377" key="GridCell.Tab.0.left" timestamp="1595141653082">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="464" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1595141346254" />
-    <state width="1860" height="464" key="GridCell.Tab.0.right" timestamp="1595141346255">
+    <state width="1860" height="377" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1595141653082" />
+    <state width="1860" height="377" key="GridCell.Tab.0.right" timestamp="1595141653084">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1860" height="464" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1595141346255" />
+    <state width="1860" height="377" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1595141653084" />
     <state x="456" y="193" key="Vcs.Push.Dialog.v2" timestamp="1594367238250">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -239,9 +236,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="631" y="221" key="extract.method.dialog/0.0.1920.1044@0.0.1920.1044" timestamp="1594373953699" />
-    <state x="441" y="123" width="1037" height="798" key="find.popup" timestamp="1595042281438">
+    <state x="441" y="123" width="1037" height="798" key="find.popup" timestamp="1595141999146">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="441" y="123" width="1037" height="798" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1595042281438" />
+    <state x="441" y="123" width="1037" height="798" key="find.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1595141999146" />
   </component>
 </project>
