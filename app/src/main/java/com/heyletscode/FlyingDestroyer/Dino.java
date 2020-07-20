@@ -15,7 +15,7 @@ public class Dino {
     public boolean wasShot = true;
     int x = 0, y, width, height, dinocounter = 1;
     Bitmap dino1, dino2, dino3, dino4,dino5,dino6,dino7,dino8;
-
+    
     double absolute(double t){
         if(t<0){
             return -t;

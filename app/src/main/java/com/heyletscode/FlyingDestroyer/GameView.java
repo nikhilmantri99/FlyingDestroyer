@@ -123,10 +123,10 @@ public class GameView extends SurfaceView implements Runnable {
         paint.setTextSize(128);
         paint.setColor(Color.WHITE);
 
-         num_birds=3;
+         num_birds=4;
          num_dinos=1;
          num_zombies=1;
-         num_greybirds=2;
+         num_greybirds=3;
          num_rockets=num_zombies;
 
         birds = new Bird[num_birds];
@@ -188,7 +188,7 @@ public class GameView extends SurfaceView implements Runnable {
           int i,j,k;
         bg_ground1.x-=10*screenRatioX;
         bg_ground2.x-=10*screenRatioX;
-        int score_limit_for_background_change=75;
+        int score_limit_for_background_change=50;
         if (bg_ground1.x + bg_ground1.background.getWidth() < 0) {
             if(score>score_limit_for_background_change && change[0]==0){
                 change[0]++;
@@ -380,12 +380,12 @@ public class GameView extends SurfaceView implements Runnable {
 //                }
                 int top_speed, min_speed;
                 if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
-                    top_speed=30;
+                    top_speed=25;
                     min_speed=15;
                 }
                 else{
-                    top_speed=45;
-                    min_speed=30;
+                    top_speed=40;
+                    min_speed=20;
                 }
 
                 int bound = (int) (top_speed * screenRatioX);
@@ -464,15 +464,17 @@ public class GameView extends SurfaceView implements Runnable {
 //                    isGameOver = true;
 //                    return;
 //                }
-
+                if(score>score_limit_for_background_change && greybirds[i].activedragon==false){
+                    greybirds[i].Transformtodragon(getResources());
+                }
                 int top_speed, min_speed;
                 if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
                     top_speed=20;
                     min_speed=12;
                 }
                 else{
-                    top_speed=50;
-                    min_speed=40;
+                    top_speed=45;
+                    min_speed=30;
                 }
 
 
