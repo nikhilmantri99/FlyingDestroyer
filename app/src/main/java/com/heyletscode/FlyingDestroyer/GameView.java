@@ -27,6 +27,7 @@ public class GameView extends SurfaceView implements Runnable {
     private int screenX, screenY, score = 0;
     public static float screenRatioX, screenRatioY;
     public static double screenInches;
+    public int[] change;
     private Paint paint;
     private Bird[] birds;
     private Dino[] dinos;
@@ -80,6 +81,10 @@ public class GameView extends SurfaceView implements Runnable {
         this.screenInches=screenInches;
 
         Log.d("debug","vivo screenInches:"+this.screenInches);
+        change=new int[9];
+        for(int i=0;i<9;i++){
+            change[i]=0;
+        }
 
         screenRatioX = 1440f / screenX;
         screenRatioY = 720f / screenY;
@@ -118,10 +123,10 @@ public class GameView extends SurfaceView implements Runnable {
         paint.setTextSize(128);
         paint.setColor(Color.WHITE);
 
-         num_birds=4;
+         num_birds=3;
          num_dinos=1;
          num_zombies=1;
-         num_greybirds=3;
+         num_greybirds=2;
          num_rockets=num_zombies;
 
         birds = new Bird[num_birds];
@@ -180,69 +185,86 @@ public class GameView extends SurfaceView implements Runnable {
     }
 
     private void update () {
-//          update_count++;
           int i,j,k;
-//        background_mid1.x -= 5 * screenRatioX;
-//        background_mid2.x -= 5 * screenRatioX;
-
-//        background_front1.x -= 10 * screenRatioX;
-//        background_front2.x -= 10 * screenRatioX;
-//
-//        if (background_front1.x + background_front1.background.getWidth() < 0) {
-//            background_front1.x = screenX;
-//        }
-//
-//        if (background_front2.x + background_front2.background.getWidth() < 0) {
-//            background_front2.x = screenX;
-//        }
-
         bg_ground1.x-=10*screenRatioX;
         bg_ground2.x-=10*screenRatioX;
+        int score_limit_for_background_change=75;
         if (bg_ground1.x + bg_ground1.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[0]==0){
+                change[0]++;
+                bg_ground1=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_01_ground);
+            }
             bg_ground1.x = bg_ground1.background.getWidth();
         }
 
         if (bg_ground2.x + bg_ground2.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[1]==0){
+                change[1]++;
+                bg_ground2=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_01_ground);
+            }
             bg_ground2.x = bg_ground2.background.getWidth();
         }
 
-        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
-            Log.d("debug:",this.screenInches+" screen is closer to 5.00");
-        }
-        else{
-            Log.d("debug:",this.screenInches+" screen is closer to 6.55");
-        }
 
         bg_treerocks1.x-=10*screenRatioX;
         bg_treerocks2.x-=10*screenRatioX;
         if (bg_treerocks1.x + bg_treerocks1.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[2]==0){
+                change[2]++;
+                bg_treerocks1=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_02_trees);
+            }
             bg_treerocks1.x = bg_treerocks1.background.getWidth();
         }
-
         if (bg_treerocks2.x + bg_treerocks2.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[3]==0){
+                change[3]++;
+                bg_treerocks2=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_02_trees);
+            }
             bg_treerocks2.x = bg_treerocks2.background.getWidth();
         }
+
 
         bg_hillscastle1.x-=5*screenRatioX;
         bg_hillscastle2.x-=5*screenRatioX;
         if (bg_hillscastle1.x + bg_hillscastle1.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[4]==0){
+                change[4]++;
+                bg_hillscastle1=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_03_cake);
+            }
             bg_hillscastle1.x = bg_hillscastle1.background.getWidth();
         }
-
         if (bg_hillscastle2.x + bg_hillscastle2.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[5]==0){
+                change[5]++;
+                bg_hillscastle2=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_03_cake);
+            }
             bg_hillscastle2.x = bg_hillscastle2.background.getWidth();
         }
+
 
         bg_clouds1.x-=5*screenRatioX;
         bg_clouds2.x-=5*screenRatioX;
         if (bg_clouds1.x + bg_clouds1.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[6]==0){
+                change[6]++;
+                bg_clouds1=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_04_clouds);
+            }
             bg_clouds1.x = bg_clouds1.background.getWidth();
         }
-
         if (bg_clouds2.x + bg_clouds2.background.getWidth() < 0) {
+            if(score>score_limit_for_background_change && change[7]==0){
+                change[7]++;
+                bg_clouds2=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_04_clouds);
+            }
             bg_clouds2.x = bg_clouds2.background.getWidth();
         }
 
+        if(score>score_limit_for_background_change && change[8]==0){
+            change[8]++;
+            bg_hills=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_05_rocks);
+            bg_rocks=new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_06_sky);
+            bg_sky= new Background(screenX, screenY, getResources(),R.drawable.layer_icecream_06_sky);
+        }
 
         int flightupspeed;
         if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
