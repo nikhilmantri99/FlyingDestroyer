@@ -22,7 +22,7 @@ import java.util.Random;
 public class GameView extends SurfaceView implements Runnable {
 
     private Thread thread;
-    public int update_count=0,num_birds,num_zombies,num_greybirds,num_dinos,num_rockets;
+    public int update_count=0,num_birds,num_zombies,num_greybirds,num_dinos,num_rockets,num_fireballs;
     private boolean isPlaying, isGameOver = false;
     private int screenX, screenY, score = 0;
     public static float screenRatioX, screenRatioY;
@@ -34,6 +34,7 @@ public class GameView extends SurfaceView implements Runnable {
     private GreyBird[] greybirds;
     private Zombie[] zombies;
     private Rocket[] rockets;
+    private Fireball[] fireballs;
     private SharedPreferences prefs;
     private Random random;
     private SoundPool soundPool;
@@ -127,13 +128,17 @@ public class GameView extends SurfaceView implements Runnable {
          num_dinos=1;
          num_zombies=1;
          num_greybirds=3;
+
          num_rockets=num_zombies;
+         num_fireballs=num_greybirds;
 
         birds = new Bird[num_birds];
         dinos= new Dino[num_dinos];
         greybirds=new GreyBird[num_greybirds];
         zombies=new Zombie[num_zombies];
         rockets= new Rocket[num_rockets];
+        fireballs=new Fireball[num_fireballs];
+
         for (int i = 0;i < num_birds;i++) {
 
             Bird bird = new Bird(getResources());
@@ -166,6 +171,13 @@ public class GameView extends SurfaceView implements Runnable {
             Rocket rocket = new Rocket(getResources());
             rocket.x=-500;
             rockets[i] = rocket;
+        }
+
+        for (int i = 0;i < num_fireballs;i++) {
+
+            Fireball fireball = new Fireball(getResources());
+            fireball.x=-500;
+            fireballs[i] = fireball;
         }
 
         random = new Random();
@@ -458,6 +470,9 @@ public class GameView extends SurfaceView implements Runnable {
         for (i=0;i<num_greybirds;i++) {
 
             greybirds[i].x -= greybirds[i].speed;
+            if(greybirds[i].activefireball==true){
+                fireballs[i].x -=fireballs[i].speed;
+            }
 
             if (greybirds[i].x + greybirds[i].width < 0) {
 
@@ -493,12 +508,26 @@ public class GameView extends SurfaceView implements Runnable {
                 greybirds[i].wasShot = false;
             }
 
+            if(fireballs[i].x + fireballs[i].width<0 && greybirds[i].wasShot==false && greybirds[i].activefireball==true){
+                int bound=(int)(greybirds[i].speed+10*screenRatioX);
+                fireballs[i].speed=bound;
+                fireballs[i].x=greybirds[i].x;
+                fireballs[i].y=greybirds[i].y+greybirds[i].height/2;
+            }
+
             if (Rect.intersects(greybirds[i].getCollisionShape(), flight.getCollisionShape())) {
 
                 isGameOver = true;
                 return;
             }
 
+        }
+
+        for(i=0;i<num_fireballs;i++){
+            if (greybirds[i].activefireball==true && Rect.intersects(fireballs[i].getCollisionShape(), flight.getCollisionShape())) {
+                isGameOver = true;
+                return;
+            }
         }
 
         for (i=0;i<num_zombies;i++) {
@@ -595,6 +624,13 @@ public class GameView extends SurfaceView implements Runnable {
                     canvas.drawBitmap(rockets[i].rocket, rockets[i].x, rockets[i].y, paint);
                 }
             }
+
+            for(int i=0;i<num_fireballs;i++){
+                if(fireballs[i].x+fireballs[i].width>0 && greybirds[i].activefireball==true){
+                    canvas.drawBitmap(fireballs[i].fireball, fireballs[i].x, fireballs[i].y, paint);
+                }
+            }
+
             canvas.drawText(score + "", screenX / 2f, 164, paint);
             if (isGameOver) {
                 isPlaying = false;
@@ -641,10 +677,10 @@ public class GameView extends SurfaceView implements Runnable {
     private void sleep () {
         int t;
         if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
-            t=10;
+            t=7;
         }
         else{
-            t=2;
+            t=1;
         }
         try {
             Thread.sleep(t);

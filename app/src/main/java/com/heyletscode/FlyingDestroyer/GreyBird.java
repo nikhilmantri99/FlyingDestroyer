@@ -13,7 +13,7 @@ import static com.heyletscode.FlyingDestroyer.GameView.screenInches;
 public class GreyBird {
 
     public int speed = 50;
-    public boolean wasShot = true, activedragon=false;
+    public boolean wasShot = true, activedragon=false, activefireball=false;
     public int x = 0, y, width, height, birdCounter = 1,health=2;
     Bitmap bird1, bird2, bird3, bird4;
 
@@ -58,6 +58,7 @@ public class GreyBird {
     }
 
     public void Transformtodragon(Resources res){
+        activefireball=true;
         activedragon=true;
         bird1 = BitmapFactory.decodeResource(res, R.drawable.flappy_dragon1);
         bird2 = BitmapFactory.decodeResource(res, R.drawable.flappy_dragon2);
@@ -86,6 +87,7 @@ public class GreyBird {
     }
 
     public void TransformtoGreyBird(Resources res){
+        activefireball=false;
         activedragon=false;
         bird1 = BitmapFactory.decodeResource(res, R.drawable.grey_bird_1);
         bird2 = BitmapFactory.decodeResource(res, R.drawable.grey_bird_2);

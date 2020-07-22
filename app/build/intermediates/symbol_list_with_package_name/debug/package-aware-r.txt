@@ -642,6 +642,7 @@ drawable dino_run_5
 drawable dino_run_6
 drawable dino_run_7
 drawable dino_run_8
+drawable fireball1
 drawable flappy_dragon1
 drawable flappy_dragon2
 drawable flappy_dragon3
