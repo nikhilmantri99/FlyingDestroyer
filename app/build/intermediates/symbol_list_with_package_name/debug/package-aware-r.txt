@@ -653,6 +653,8 @@ drawable flying_destroyer_button
 drawable flyingdestroyer1
 drawable flyingdestroyer2
 drawable flyingdestroyer3
+drawable flyingdestroyer4
+drawable flyingdestroyer5
 drawable grey_bird_1
 drawable grey_bird_2
 drawable grey_bird_3
