@@ -12,7 +12,7 @@ import static com.heyletscode.FlyingDestroyer.GameView.screenInches;
 public class Dino {
 
     public int speed = 30;
-    public boolean wasShot = true;
+    public boolean wasShot = true,activejack=false;
     int x = 0, y, width, height, dinocounter = 1;
     Bitmap dino1, dino2, dino3, dino4,dino5,dino6,dino7,dino8;
     
@@ -27,6 +27,84 @@ public class Dino {
 
     Dino (Resources res) {
 
+        dino1 = BitmapFactory.decodeResource(res, R.drawable.dino_run_1);
+        dino2 = BitmapFactory.decodeResource(res, R.drawable.dino_run_2);
+        dino3 = BitmapFactory.decodeResource(res, R.drawable.dino_run_3);
+        dino4 = BitmapFactory.decodeResource(res, R.drawable.dino_run_4);
+        dino5 = BitmapFactory.decodeResource(res, R.drawable.dino_run_5);
+        dino6 = BitmapFactory.decodeResource(res, R.drawable.dino_run_6);
+        dino7 = BitmapFactory.decodeResource(res, R.drawable.dino_run_7);
+        dino8 = BitmapFactory.decodeResource(res, R.drawable.dino_run_8);
+
+        width = dino1.getWidth();
+        height = dino1.getHeight();
+
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            width /= 6;
+            height /= 6;
+        }
+        else{
+            width /= 3;
+            height /= 3;
+        }
+
+        width = (int) (width * screenRatioX);
+        height = (int) (height * screenRatioY);
+
+        dino1 = Bitmap.createScaledBitmap(dino1, width, height, false);
+        dino2 = Bitmap.createScaledBitmap(dino2, width, height, false);
+        dino3 = Bitmap.createScaledBitmap(dino3, width, height, false);
+        dino4 = Bitmap.createScaledBitmap(dino4, width, height, false);
+        dino5 = Bitmap.createScaledBitmap(dino5, width, height, false);
+        dino6 = Bitmap.createScaledBitmap(dino6, width, height, false);
+        dino7 = Bitmap.createScaledBitmap(dino7, width, height, false);
+        dino8 = Bitmap.createScaledBitmap(dino8, width, height, false);
+        //dino1 = Bitmap.createScaledBitmap(dino1, width, height, false);
+
+        y = -height;
+    }
+
+    public void TransformtoJack(Resources res){
+        activejack=true;
+        dino1 = BitmapFactory.decodeResource(res, R.drawable.jack_run_1);
+        dino2 = BitmapFactory.decodeResource(res, R.drawable.jack_run_2);
+        dino3 = BitmapFactory.decodeResource(res, R.drawable.jack_run_3);
+        dino4 = BitmapFactory.decodeResource(res, R.drawable.jack_run_4);
+        dino5 = BitmapFactory.decodeResource(res, R.drawable.jack_run_5);
+        dino6 = BitmapFactory.decodeResource(res, R.drawable.jack_run_6);
+        dino7 = BitmapFactory.decodeResource(res, R.drawable.jack_run_7);
+        dino8 = BitmapFactory.decodeResource(res, R.drawable.jack_run_8);
+
+        width = dino1.getWidth();
+        height = dino1.getHeight();
+
+        if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
+            width /= 10;
+            height /= 10;
+        }
+        else{
+            width /= 5;
+            height /= 5;
+        }
+
+        width = (int) (width * screenRatioX);
+        height = (int) (height * screenRatioY);
+
+        dino1 = Bitmap.createScaledBitmap(dino1, width, height, false);
+        dino2 = Bitmap.createScaledBitmap(dino2, width, height, false);
+        dino3 = Bitmap.createScaledBitmap(dino3, width, height, false);
+        dino4 = Bitmap.createScaledBitmap(dino4, width, height, false);
+        dino5 = Bitmap.createScaledBitmap(dino5, width, height, false);
+        dino6 = Bitmap.createScaledBitmap(dino6, width, height, false);
+        dino7 = Bitmap.createScaledBitmap(dino7, width, height, false);
+        dino8 = Bitmap.createScaledBitmap(dino8, width, height, false);
+        //dino1 = Bitmap.createScaledBitmap(dino1, width, height, false);
+
+        y = -height;
+    }
+
+    public void TransformtoDino(Resources res){
+        activejack=false;
         dino1 = BitmapFactory.decodeResource(res, R.drawable.dino_run_1);
         dino2 = BitmapFactory.decodeResource(res, R.drawable.dino_run_2);
         dino3 = BitmapFactory.decodeResource(res, R.drawable.dino_run_3);
@@ -112,7 +190,7 @@ public class Dino {
     }
 
     Rect getCollisionShape () {
-        return new Rect(x+width/2, y+height/4, x + width, y + height);
+        return new Rect(x+width/2, y+height/4, x + width, y + (4*height)/5);
     }
 
 }

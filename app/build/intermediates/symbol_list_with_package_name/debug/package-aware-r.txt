@@ -659,6 +659,14 @@ drawable grey_bird_4
 drawable highscorebutton
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable jack_run_1
+drawable jack_run_2
+drawable jack_run_3
+drawable jack_run_4
+drawable jack_run_5
+drawable jack_run_6
+drawable jack_run_7
+drawable jack_run_8
 drawable layer01_ground
 drawable layer02_trees_rocks
 drawable layer03_hills_castle

@@ -410,16 +410,19 @@ public class GameView extends SurfaceView implements Runnable {
 
         }
 
-        for (Dino dino : dinos) {
+        for (i=0;i<num_dinos;i++) {
 
-            dino.x -= dino.speed;
+            dinos[i].x -= dinos[i].speed;
 
-            if (dino.x + dino.width < 0) {
+            if (dinos[i].x + dinos[i].width < 0) {
 
 //                if (!dino.wasShot) {
 //                    isGameOver = true;
 //                    return;
 //                }
+                if(score>score_limit_for_background_change+25 && dinos[i].activejack==false){
+                    dinos[i].TransformtoJack(getResources());
+                }
                 int top_speed, min_speed;
                 if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
                     top_speed=30;
@@ -430,28 +433,26 @@ public class GameView extends SurfaceView implements Runnable {
                     min_speed=20;
                 }
                 int bound = (int) (top_speed* screenRatioX);
-                dino.speed = random.nextInt(bound);
+                dinos[i].speed = random.nextInt(bound);
 
-                if (dino.speed < min_speed * screenRatioX)
-                    dino.speed = (int) (min_speed * screenRatioX);
+                if (dinos[i].speed < min_speed * screenRatioX)
+                    dinos[i].speed = (int) (min_speed * screenRatioX);
 
-                dino.x = screenX;
+                dinos[i].x = screenX;
                 if(absolute(screenInches-5.00)<absolute(screenInches-6.55)){
-                    dino.y = screenY-dino.height-80;
+                    dinos[i].y = screenY-dinos[i].height-80;
                 }
                 else{
-                    dino.y = screenY-dino.height-140;
+                    dinos[i].y = screenY-dinos[i].height-140;
                 }
 
-                dino.wasShot = false;
+                dinos[i].wasShot = false;
             }
-
-            if (Rect.intersects(dino.getCollisionShape(), flight.getCollisionShape())) {
+            if (Rect.intersects(dinos[i].getCollisionShape(), flight.getCollisionShape())) {
 
                 isGameOver = true;
                 return;
             }
-
         }
 
         for (i=0;i<num_greybirds;i++) {
@@ -464,7 +465,7 @@ public class GameView extends SurfaceView implements Runnable {
 //                    isGameOver = true;
 //                    return;
 //                }
-                if(score>score_limit_for_background_change && greybirds[i].activedragon==false){
+                if(score>score_limit_for_background_change+25 && greybirds[i].activedragon==false){
                     greybirds[i].Transformtodragon(getResources());
                 }
                 int top_speed, min_speed;
