@@ -7,4 +7,8 @@ Tap on the left of the screen to move your plane up. Tap on the right to fire bu
 
 ![alt text](https://github.com/nikhilmantri99/FlyingDestroyer/blob/master/app/src/main/res/drawable/flyingdestroyer2.jpg)
 
-![alt text](https://github.com/nikhilmantri99/FlyingDestroyer/blob/master/app/src/main/res/drawable/flyingdestroyer1.jpg)
+![alt text](https://github.com/nikhilmantri99/FlyingDestroyer/blob/master/app/src/main/res/drawable/flyingdestroyer4.jpg)
+
+![alt text](https://github.com/nikhilmantri99/FlyingDestroyer/blob/master/app/src/main/res/drawable/flyingdestroyer5.jpg)
+
+![alt text](https://github.com/nikhilmantri99/FlyingDestroyer/blob/master/app/src/main/res/drawable/flyingdestroyer3.jpg)
